@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Snowball());
+  runApp(const Snowball());
 }
 
 class Snowball extends StatelessWidget {
+  const Snowball({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,48 +15,52 @@ class Snowball extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Snowball'),
+        title: const Text('Snowball'),
       ),
-      body: Column(
+      body: const Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(16.0),
             child: Text(
-              'Hello! [Name]',
+              'Hello! [Name]', // Replace [Name] with the user's name
               style: TextStyle(fontSize: 24),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(16.0),
             child: Text(
-              'Networth',
-              style: TextStyle(fontSize: 24),
+              'Your Current Networth: [Networth]', // Replace [Networth] with the user's networth
+              'Your networth is [Up/Down] by [Amount] from 30 days ago', // Replace [Up/Down] with 'up' or 'down' and [Amount] with the amount
+
+              style: TextStyle(fontSize: 24), 
             ),
           ),
         ],
       ),
       drawer: Drawer(
         child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            DrawerHeader(
-              child: Text('Menu'),
+          padding: EdgeInsets.zero, 
+          children: [ 
+            const DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
+              child: Text('Menu'),
             ),
             ListTile(
-              title: Text('Your Budgets'),
+              title: const Text('Your Budgets'),
               onTap: () {
                 // Code for what happens when the button is pressed goes here
                 // ...
@@ -63,7 +69,7 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text('Your Investments'),
+              title: const Text('Your Investments'),
               onTap: () {
                 // Code for what happens when the button is pressed goes here
                 // ...
@@ -71,7 +77,7 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text('AI'),
+              title: const Text('AI'),
               onTap: () {
                 // Code for what happens when the button is pressed goes here
                 // ...
@@ -79,7 +85,7 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text('Account'),
+              title: const Text('Account'),
               onTap: () {
                 // Code for what happens when the button is pressed goes here
                 // ...

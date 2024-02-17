@@ -1,6 +1,6 @@
 {
-    "name": "snowball",
-    "short_name": "snowball",
+    "name": "Snowball",
+    "short_name": "Snowball",
     "start_url": ".",
     "display": "standalone",
     "background_color": "1,117,194",
