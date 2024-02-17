@@ -1,4 +1,4 @@
-package com.example.snowball
+package com.snowball.flutter_app
 
 import io.flutter.embedding.android.FlutterActivity
 
