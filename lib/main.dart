@@ -5,9 +5,6 @@ void main() {
   runApp(const Snowball());
 }
 
-
-
-
 class Snowball extends StatelessWidget {
   const Snowball({super.key});
 
