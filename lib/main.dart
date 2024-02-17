@@ -41,8 +41,15 @@ class HomePage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(16.0),
             child: Text(
-              'Your Current Networth: [Networth]', // Replace [Networth] with the user's networth
-              'Your networth is [Up/Down] by [Amount] from 30 days ago', // Replace [Up/Down] with 'up' or 'down' and [Amount] with the amount
+              'Your Current Networth: [Networth] \n Your networth is [Up/Down] by [Amount] from 30 days ago ', // Replace [Networth] with $networth variable
+              // Replace [Up/Down] with 'up' or 'down' and [Amount] with the amount, using if else statements with variables
+
+              /* if (up) {
+                'Your networth is up by $amount from 30 days ago'
+              } else {
+                'Your networth is down by $amount from 30 days ago'
+              }
+              */
 
               style: TextStyle(fontSize: 24), 
             ),
