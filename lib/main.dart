@@ -1,11 +1,15 @@
+// gives access to the material.dart library (which contains prebuilt widgets)
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Snowball());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+
+
+class Snowball extends StatelessWidget {
+  const Snowball({super.key});
 
   // This widget is the root of your application.
   @override
