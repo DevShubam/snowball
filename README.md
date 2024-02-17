@@ -8,6 +8,3 @@ An all-in-one personal finance app.
 - Investment Tracking
 - AI Integration
 
-# License
-
-A license is coming soon.
