@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-
+import 'homepage.dart';
+import 'budget_page.dart';
 void main() {
-  runApp(const MainApp());
+  runApp(MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Snowball!'),
-        ),
-      ),
+    return MaterialApp(
+      title: 'Finance App',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Homepage(),
+        '/budget': (context) => BudgetPage(),
+      },
     );
   }
 }
