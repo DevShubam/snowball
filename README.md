@@ -1,3 +1,3 @@
-# snowbal
+# snowball
 
-A new Flutter project.
+An all-in-one personal finance app.
